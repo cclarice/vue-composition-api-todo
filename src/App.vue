@@ -34,7 +34,7 @@ export default {
       taskList.value = [
         ...taskList.value,
         {
-          id: taskList.value[taskList.value.length - 1].id + 1,
+          id: taskList.value[0] ? taskList.value[taskList.value.length - 1].id + 1 : 0,
           title, description,
           status: false
         }
